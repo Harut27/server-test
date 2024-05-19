@@ -1,0 +1,143 @@
+
+.file-manager-path{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .file-manager-path-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+
+        .file-manager-path-item-sep{
+            color: grey;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+
+        a {
+            font-weight: 400;
+            cursor: pointer;
+        }
+        span { 
+            font-weight: 600;
+        }
+
+        &.active{
+           a{
+                color: #000 !important;
+                text-decoration: none;
+                cursor: pointer;
+           }
+        }
+    }
+}
+
+
+.file-manager-container{
+    min-height: 450px;
+}
+
+.file-manager-content-actions{
+    margin-top: 15px;
+    display: flex;
+
+
+
+    a:hover{
+        background-color:#e6e4e4 ;
+    }
+
+    .file-manager-content-actions-item{
+        width: 60px;
+        color:#008DDA;
+        background-color: #f5f5f5;
+        padding: 5px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin: 0 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .file-manager-content-actions-item-icon{
+        font-size: 25px;
+    }
+}
+
+.file-manager-content-create{
+    display: flex;
+    margin-top:5px;
+}
+
+.file-manager-content{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+
+    .file-icon{
+        margin-right: 7px;
+        margin-left:3px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    //button
+    .file-manager-content-item{
+        display: flex;
+ 
+        .file-manager-content-item-btn-cnt{
+            width: 85%;
+            background-color: #fff;
+            border: none;
+            padding: 7px;
+            font-size:18px;
+            display: flex;
+        }
+
+        &.active{
+            background-color: #f5f5f5;
+            border-radius: 7px;
+            padding-bottom: 3px;
+            .file-manager-content-item-btn-cnt{
+                background-color: #f5f5f5;
+                border-radius: 7px;
+            }
+        }
+
+        .file-manager-content-item-folder-mess{
+            // width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 12px;
+            margin-left:15px;
+            color: grey;
+        }
+   
+
+        .file-manager-content-item-actions{
+            width: 15%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 10px;
+            border-left: 1.2px solid #ffffff;
+
+            a{
+                background-color: #fff;
+                padding: 2px 7px 2px 7px;
+                border-radius: 50%;
+                margin-left: 6px;
+                margin-right: 6px;
+                font-size: 18px;
+                color: #008DDA;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+sudo -u postgres psql -P format=unaligned -c "\\l"
